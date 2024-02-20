@@ -61,6 +61,10 @@ After hyperparameter tuning, XGBoost achieved the following results:
 
 These results indicate that the model performs well in predicting flight fares.
 
+![preview-1](https://github.com/Veer6693/flight-fare-prediction/assets/102231617/2fbf630e-0eb9-468b-b9de-ef73b5b15830)
+
+![preview-2](https://github.com/Veer6693/flight-fare-prediction/assets/102231617/d7e73238-0774-48d0-89d7-45f23a081f2e)
+
 ## Future Improvements
 
 - Include more features for better prediction accuracy.
