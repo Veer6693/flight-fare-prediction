@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/style.css">
+
+    <link rel="icon" type="image/x-icon" href="/static/airplane-png-16.png">
+
+
+    <title>Flight Fare Prediction</title>
+</head>
+
+<body>
+
+    <div class="header auto-fill-div">
+        <h1>Flight Fare Prediction</h1>
+    </div>
+
+
+
+        <form class="form-bg" method="POST" action="/predict">
+            <div class="form-option">
+                <div class="form-row">
+                    <div class="col">
+                        <label for="source">Source</label>
+                        <select name="source" id="source" class="form-control">
+                            <option value="Banglore">Banglore</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="Mumbai">Mumbai</option>
+
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="destination">Destination</label>
+                        <select name="destination" id="destination" class="form-control">
+                            <option value="Cochin">Cochin</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Banglore">Banglore</option>
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="New Delhi">New Delhi</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label for="departure_date">Departure Date</label>
+                        <input type="datetime-local" name="departure_date" id="departure_date" class="form-control"
+                            required>
+                    </div>
+                    <div class="col">
+                        <label for="arrival_date">Arrival Date</label>
+                        <input type="datetime-local" name="arrival_date" id="arrival_date" class="form-control"
+                            required>
+                    </div>
+                </div>
+
+
+
+                <div class="form-row">
+                    <div class="col">
+                        <label for="stop">Stops</label>
+                        <select name="stop" id="stop" class="form-control">
+                            <option value="0">Non-Stop</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="airline">Airline</label>
+                        <select name="airline" id="airline" class="form-control">
+                            <option value="Air Asia">Air Asia</option>
+                            <option value="Air India">Air India</option>
+                            <option value="GoAir">GoAir</option>
+                            <option value="IndiGo">IndiGo</option>
+                            <option value="Jet Airways">Jet Airways</option>
+                            <option value="Jet Airways Business">Jet Airways Business</option>
+                            <option value="Multiple carriers">Multiple carriers</option>
+                            <option value="Multiple carriers Premium economy">Multiple carriers Premium economy</option>
+                            <option value="SpiceJet">SpiceJet</option>
+                            <option value="Trujet">Trujet</option>
+                            <option value="Vistara">Vistara</option>
+                            <option value="Vistara Premium economy">Vistara Premium economy</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="submit-btn">
+                    <button type="submit" class="button-30 ">Submit</button>
+                    
+                </div>
+            </div>
+        </form>
+
+
+    <h3 class="prediction">{{prediction_output}}</h3>
+
+
+    <div class="footer">
+        <div class="container text-center">
+            <p class="created-by"> <b>Created by Veer</b> &copy;2024 </p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/veer-patel-602a76215/"><img align="center"
+                        src="/static/linkedin.png" height="40" width="40" /></a>&nbsp &nbsp &nbsp
+                <a href="https://github.com/Veer6693"><img align="center" src="/static/GitHub.png" height="40"
+                        width="40" /></a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
