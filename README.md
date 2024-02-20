@@ -16,7 +16,7 @@ To run the project locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/flight-fare-prediction.git
+   git clone https://github.com/Veer6693/flight-fare-prediction.git
    
 2. Install the required packages:
 
