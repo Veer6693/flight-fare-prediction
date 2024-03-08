@@ -48,6 +48,12 @@ The dataset used for this project contains 11 columns:
 
 It consists of 10683 rows.
 
+## Deployment
+
+This project is deployed on AWS for easy access. You can access the deployed version using the following link:
+
+[Flight Fare Prediction](http://ec2-13-232-234-56.ap-south-1.compute.amazonaws.com:8080/)
+
 ## Results
 
 The model was evaluated using multiple metrics, including Mean Absolute Error, Mean Square Error, Root Mean Square Error, and R2 Score.
